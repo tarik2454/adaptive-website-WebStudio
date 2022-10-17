@@ -1,0 +1,50 @@
+.subscribe__title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.subscribe__group {
+  display: flex;
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 0 16px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
+
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: $primary-bg-color;
+  }
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__icon {
+  fill: $white;
+}

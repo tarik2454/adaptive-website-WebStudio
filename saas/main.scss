@@ -1,0 +1,35 @@
+@import './utils/vars.scss';
+@import './utils/reset';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/placeholder';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+}
+
+/* Components */
+@import './components/container';
+@import './components/button';
+@import './components/layout/header';
+@import './components/common/logo';
+@import './components/nav';
+@import './components/intro';
+@import './components/info';
+@import './components/section';
+@import './components/catalog';
+@import './components/social';
+@import './components/team';
+@import './components/client';
+@import './components/form';
+@import './components/subscribe';
+@import './components/works';
+@import './components/modal';
+@import './components/layout/footer';

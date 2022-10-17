@@ -1,0 +1,135 @@
+.form__text {
+  @extend %text-center;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $secondary-text-color;
+}
+
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: $secondary-text-color;
+
+  position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-child(5) {
+    margin-bottom: 20px;
+  }
+
+  &:focus-within {
+    color: $accent-color;
+  }
+}
+
+.form__icon {
+  fill: currentColor;
+
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+/* .form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+} */
+
+.form__input,
+.form__textarea {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+
+  @include bordered(rgba(33, 33, 33, 0.2));
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: transparent;
+    border-color: $accent-color;
+  }
+}
+
+.form__input {
+  height: 39px;
+  padding: 0 16px 0 42px;
+}
+
+.form__textarea {
+  height: 119px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.agreement__form {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  margin-bottom: 30px;
+}
+
+.agreement__input {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  &:checked {
+    & ~ .agreement__icon {
+      border-color: transparent;
+      background-color: $accent-color;
+      background-origin: border-box;
+    }
+  }
+}
+
+.agreement__icon {
+  margin-right: 7px;
+  fill: $white;
+  border: 2px solid $black;
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__label {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.agreement__text {
+  margin-right: 4px;
+}
+
+.agreement__link {
+  color: $accent-color;
+}

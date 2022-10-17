@@ -1,0 +1,20 @@
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+.section--info {
+  padding-bottom: 0;
+}
+
+.section--team {
+  background-color: $secondary-bg-color;
+}
