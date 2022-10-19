@@ -76,6 +76,15 @@
   padding: 0 16px 0 42px;
 }
 
+// Валидация форм
+// .form__input:not(:placeholder-shown):not(:focus):valid {
+//   background-color: rgb(165, 240, 230);
+// }
+
+// .form__input:not(:placeholder-shown):not(:focus):invalid {
+//   background-color: rgb(240, 188, 185);
+// }
+
 .form__textarea {
   height: 119px;
   padding: 12px 16px;
@@ -94,9 +103,6 @@
 }
 
 .agreement__input {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   &:checked {
     & ~ .agreement__icon {
       border-color: transparent;

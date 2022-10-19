@@ -1,5 +1,15 @@
 .section {
   padding: 94px 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+
+  &:nth-child(3) {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
 }
 
 .section__title {
@@ -12,7 +22,11 @@
 }
 
 .section--info {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .section--team {

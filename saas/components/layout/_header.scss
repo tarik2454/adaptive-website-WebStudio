@@ -1,6 +1,12 @@
 .header {
-  height: 80px;
+  height: 60px;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    padding: 0;
+  }
 }
 
 .header__inner {
@@ -9,12 +15,32 @@
 }
 
 .contact__list {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
-.contact__item:first-child {
-  margin-right: 50px;
+.contact__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contact__link {

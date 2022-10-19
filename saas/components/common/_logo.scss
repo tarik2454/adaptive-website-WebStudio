@@ -1,10 +1,15 @@
 .logo {
   display: inline-block;
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__item {
@@ -12,8 +17,12 @@
 }
 
 .logo--header {
-  margin-right: 93px;
-  color: $black;
+  color: $secondary-text-color;
+  margin-right: 87px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo--footer {

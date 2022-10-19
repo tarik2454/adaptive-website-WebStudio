@@ -1,18 +1,18 @@
 .info__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .info__item {
-  width: calc((100% - 90px) / 4);
-  margin: 0 30px 30px 0;
+  width: 100%;
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
   }
 
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -37,6 +37,11 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $secondary-text-color;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .info__text {
