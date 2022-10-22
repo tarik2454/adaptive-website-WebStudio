@@ -5,6 +5,10 @@
   font-size: 20px;
   line-height: 1.15;
   color: $secondary-text-color;
+
+  @media screen and (max-width: 767) {
+    line-height: 1.5;
+  }
 }
 
 .form__label {
@@ -127,9 +131,15 @@
   align-items: center;
 
   margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .agreement__text {

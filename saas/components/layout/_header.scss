@@ -3,6 +3,8 @@
   padding: 16px 0;
   border-bottom: 1px solid #ececec;
 
+  position: relative;
+
   @media screen and (min-width: 768px) {
     height: 80px;
     padding: 0;
@@ -12,11 +14,14 @@
 .header__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .contact__list {
   @media screen and (max-width: 767px) {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -31,8 +36,20 @@
 }
 
 .contact__item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 32px;
+
+  &:first-child {
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -47,9 +64,10 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  text-decoration: none;
-  line-height: 1.17;
+  font-size: 32px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: $primary-text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,9 +76,22 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: inherit;
+    line-height: 1.14;
+  }
 }
 
 .contact__icon {
   fill: currentColor;
   margin-right: 10px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

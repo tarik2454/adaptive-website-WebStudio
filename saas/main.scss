@@ -4,6 +4,10 @@
 @import './utils/mixins';
 @import './utils/placeholder';
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -13,6 +17,11 @@ body {
   letter-spacing: 0.03em;
   color: $primary-text-color;
   background-color: $primary-bg-color;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* Components */
@@ -20,7 +29,7 @@ body {
 @import './components/button';
 @import './components/layout/header';
 @import './components/common/logo';
-@import './components/nav';
+@import './components/menu';
 @import './components/intro';
 @import './components/info';
 @import './components/section';
@@ -30,6 +39,7 @@ body {
 @import './components/client';
 @import './components/form';
 @import './components/subscribe';
+@import './components/adress';
 @import './components/works';
 @import './components/modal';
 @import './components/layout/footer';

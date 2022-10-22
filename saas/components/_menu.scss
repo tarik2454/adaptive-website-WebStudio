@@ -1,0 +1,141 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+
+    background-color: $primary-bg-color;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.nav__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 51px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 53px;
+    }
+  }
+}
+
+.nav__link {
+  display: block;
+
+  font-weight: 500;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+
+  position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    font-size: 14px;
+
+    &--active {
+      color: $accent-color;
+
+      &::after {
+        display: block;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+
+        position: absolute;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-toggle {
+  margin-left: auto;
+  background-color: transparent;
+  color: $secondary-text-color;
+
+  z-index: 1;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    .nav-toggle__close {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-toggle__icon {
+  fill: currentColor;
+}
+
+.nav-toggle {
+  .nav-toggle__close {
+    display: none;
+  }
+}
+
+.nav-toggle.is-open {
+  .nav-toggle__close {
+    display: block;
+  }
+}
+
+.nav-toggle.is-open {
+  .nav-toggle__static {
+    display: none;
+  }
+}
