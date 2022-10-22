@@ -9,7 +9,13 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  &:first-child {
+    .address__link {
+      color: $white;
+    }
+  }
+
+  @include breakpoint($desktop) {
     margin-bottom: 10px;
   }
 }

@@ -13,18 +13,22 @@
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   color: $secondary-text-color;
   text-align: center;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .section--info {
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include breakpoint($desktop) {
     padding-bottom: 0;
   }
 }

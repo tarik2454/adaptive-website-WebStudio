@@ -1,8 +1,7 @@
 @import './utils/vars.scss';
 @import './utils/reset';
-@import './utils/breakpoints';
+@import './utils/helpers';
 @import './utils/mixins';
-@import './utils/placeholder';
 
 html {
   overflow-x: hidden;
@@ -34,7 +33,7 @@ body {
 @import './components/info';
 @import './components/section';
 @import './components/catalog';
-@import './components/social';
+@import './components/common/social';
 @import './components/team';
 @import './components/client';
 @import './components/form';

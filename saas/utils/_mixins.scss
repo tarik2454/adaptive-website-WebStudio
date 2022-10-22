@@ -7,3 +7,15 @@
   justify-content: center;
   align-items: center;
 }
+
+// @mixin media($size) {
+//   @media screen and (min-width: $size + px) {
+//     @content;
+//   }
+// }
+
+@mixin breakpoint($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}

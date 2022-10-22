@@ -7,11 +7,11 @@
 .info__item {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @include breakpoint($tablet) {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include breakpoint($desktop) {
     width: calc((100% - 90px) / 4);
   }
 }

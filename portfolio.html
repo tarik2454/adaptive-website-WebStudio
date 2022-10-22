@@ -26,38 +26,77 @@
             ><span class="logo__item">Web</span>Studio</a
           >
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="index.html">Студія</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link--active" href="portfolio.html">Портфоліо</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Контакти</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="menu" data-menu>
+            <div class="menu__inner">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="index.html">Студія</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
 
-          <ul class="contact__list">
-            <li class="contact__item">
-              <a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contact__item">
-              <a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@devstudio.com">
+                    <svg class="contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link" href="tel:+380961111111">
+                    <svg class="contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="social-name">
+                <li class="social-name__item">
+                  <a class="social-name__link" href="#" target="_blank">Instagram</a>
+                </li>
+                <li class="social-name__item">
+                  <a class="social-name__link" href="# " target="_blank">Twitter</a>
+                </li>
+                <li class="social-name__item">
+                  <a class="social-name__link" href="#" target="_blank">Facebook</a>
+                </li>
+                <li class="social-name__item">
+                  <a class="social-name__link" href="#" target="_blank">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button
+            class="button nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-button
+          >
+            <svg
+              class="nav-toggle__icon"
+              width="24"
+              height="16"
+              aria-label="Перемикач мобiльного меню"
+            >
+              <use class="nav-toggle__static" href="./images/icons.svg#icon-menu"></use>
+              <use class="nav-toggle__close" href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <!-- <div class="menu" id="menu" data-menu>Контент меню</div> -->
         </div>
       </div>
       <!-- /.container -->
@@ -221,10 +260,10 @@
                   <img
                     class="works__img"
                     srcset="
-                      ./images/portfolio/portfolio-5.jpg    1x,
-                      ./images/portfolio/portfolio-5@2x.jpg 2x
+                      ./images/portfolio/portfolio-6.jpg    1x,
+                      ./images/portfolio/portfolio-6@2x.jpg 2x
                     "
-                    src="./images/portfolio/portfolio-5.jpg"
+                    src="./images/portfolio/portfolio-6.jpg"
                     alt="робота 6"
                     width="370"
                   />
@@ -246,10 +285,10 @@
                   <img
                     class="works__img"
                     srcset="
-                      ./images/portfolio/portfolio-6.jpg    1x,
-                      ./images/portfolio/portfolio-6@2x.jpg 2x
+                      ./images/portfolio/portfolio-7.jpg    1x,
+                      ./images/portfolio/portfolio-7@2x.jpg 2x
                     "
-                    src="./images/portfolio/portfolio-6.jpg"
+                    src="./images/portfolio/portfolio-7.jpg"
                     alt="робота 7"
                     width="370"
                   />
@@ -271,10 +310,10 @@
                   <img
                     class="works__img"
                     srcset="
-                      ./images/portfolio/portfolio-7.jpg    1x,
-                      ./images/portfolio/portfolio-7@2x.jpg 2x
+                      ./images/portfolio/portfolio-8.jpg    1x,
+                      ./images/portfolio/portfolio-8@2x.jpg 2x
                     "
-                    src="./images/portfolio/portfolio-7.jpg"
+                    src="./images/portfolio/portfolio-8.jpg"
                     alt="робота 8"
                     width="370"
                   />
