@@ -7,13 +7,24 @@
 
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/intro/intro-img.jpg);
-  background-size: cover;
+    url(../../images/intro/intro-bg.jpg);
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: scroll;
+
+  background-size: cover;
 
   @media screen and (min-width: 1200px) {
     min-height: 600px;
     padding: 200px 0;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url(../../images/intro/intro-bg@2x.jpg);
   }
 }
 
