@@ -1,2 +1,2 @@
 # goit-markup-hw-08
-домашнее задание #8
+https://tarik2454.github.io/goit-markup-hw-08/ домашнее задание #8
