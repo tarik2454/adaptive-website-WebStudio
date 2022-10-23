@@ -82,8 +82,12 @@
   }
 
   @include breakpoint($tablet) {
-    font-size: inherit;
+    font-size: 12px;
     line-height: 1.14;
+  }
+
+  @include breakpoint($desktop) {
+    font-size: 14px;
   }
 }
 

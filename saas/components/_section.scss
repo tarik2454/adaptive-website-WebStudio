@@ -14,7 +14,7 @@
 
 .section__title {
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   color: $secondary-text-color;
@@ -22,6 +22,7 @@
 
   @include breakpoint($desktop) {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 

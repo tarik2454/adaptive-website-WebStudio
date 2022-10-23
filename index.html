@@ -264,12 +264,18 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                srcset="./images/team/team-2.jpg 1x, ./images/team/team-2@2x.jpg 2x"
-                src="./images/team/team-2.jpg"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img.webp 1x, ./images/team/img@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="team__foto"
+                  srcset="./images/team/team-2.jpg 1x, ./images/team/team-2@2x.jpg 2x"
+                  src="./images/team/team-2.jpg"
+                  width="270"
+                />
+              </picture>
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="social social--team">
