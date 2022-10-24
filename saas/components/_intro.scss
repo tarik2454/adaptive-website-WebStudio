@@ -5,31 +5,51 @@
   padding: 118px 0;
   text-align: center;
 
-  background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/intro/intro-bg.jpg);
-
   // background-image: image-set(
   //   url('../images/intro/intro-bg.jpg') type('image/jpeg') 1x,
   //   url('../images/intro/intro-bg @2x.jpg') type('image/jpeg') 2x
   // );
 
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/intro/intro-bg480.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/intro/intro-bg480@2x.jpg);
+  }
+
+  @include breakpoint($tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/intro/intro-bg768.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/intro/intro-bg768@2x.jpg);
+    }
+  }
+
+  @include breakpoint($desktop) {
     min-height: 600px;
     padding: 200px 0;
-  }
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .intro {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/intro/intro-bg@2x.jpg);
+      url(../images/intro/intro-bg1200.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/intro/intro-bg1200@2x.jpg);
+    }
   }
 }
 

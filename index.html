@@ -222,13 +222,26 @@
 
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__foto"
-                srcset="./images/team/team-1.jpg 1x, ./images/team/team-1@2x.jpg 2x"
-                src="./images/team/team-1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/team-1-270.jpg 1x, ./images/team/team-1-270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team-1-354.jpg 1x, ./images/team/team-1-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team-1-450.jpg 1x, ./images/team/team-1-450@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/team/team-1-450.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="social social--team">
@@ -265,15 +278,30 @@
 
             <li class="team__item">
               <picture>
-                <source
-                  srcset="./images/team/img.webp 1x, ./images/team/img@2x.webp 2x"
+                <!-- <source
+                  srcset="
+                    ./images/team/team-2-450-webp.webp    1x,
+                    ./images/team/team-2-450-webp@2x.webp 2x
+                  "
                   type="image/webp"
+                /> -->
+                <source
+                  srcset="./images/team/team-2-270.jpg 1x, ./images/team/team-2-270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team-2-354.jpg 1x, ./images/team/team-2-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team-2-450.jpg 1x, ./images/team/team-2-450@2x.jpg 2x"
+                  media="(min-width: 480px)"
                 />
                 <img
                   class="team__foto"
-                  srcset="./images/team/team-2.jpg 1x, ./images/team/team-2@2x.jpg 2x"
-                  src="./images/team/team-2.jpg"
-                  width="270"
+                  src="./images/team/team-2-450.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
                 />
               </picture>
               <h3 class="team__title">Ольга Рєпіна</h3>
@@ -311,13 +339,26 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                srcset="./images/team/team-3.jpg 1x, ./images/team/team-3@2x.jpg 2x"
-                src="./images/team/team-3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/team-3-270.jpg 1x, ./images/team/team-3-270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team-3-354.jpg 1x, ./images/team/team-3-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team-3-450.jpg 1x, ./images/team/team-3-450@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/team/team-3-450.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="social social--team">
@@ -353,13 +394,26 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                srcset="./images/team/team-4.jpg 1x, ./images/team/team-4@2x.jpg 2x"
-                src="./images/team/team-4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/team-4-270.jpg 1x, ./images/team/team-4-270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/team-4-354.jpg 1x, ./images/team/team-4-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team-4-450.jpg 1x, ./images/team/team-4-450@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team__foto"
+                  src="./images/team/team-4-450.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="social social--team">

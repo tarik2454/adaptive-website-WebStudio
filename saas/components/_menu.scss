@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  overflow: auto;
 
   @media screen and (max-width: 767px) {
     width: 100vw;
