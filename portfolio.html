@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
     <title>Студiя</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -132,16 +132,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-1.jpg    1x,
-                      ./images/portfolio/portfolio-1@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-1.jpg"
-                    alt="робота 1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-1.jpg    1x,
+                        ./images/portfolio/desktop-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-1.jpg    1x,
+                        ./images/portfolio/tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-1.jpg    1x,
+                        ./images/portfolio/mobile-1@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-1.jpg"
+                      alt="Робота 2"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -157,16 +176,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-2.jpg    1x,
-                      ./images/portfolio/portfolio-2@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-2.jpg"
-                    alt="робота 2"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-2.jpg    1x,
+                        ./images/portfolio/desktop-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-2.jpg    1x,
+                        ./images/portfolio/tablet-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-2.jpg    1x,
+                        ./images/portfolio/mobile-2@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-2.jpg"
+                      alt="Робота 2"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -182,16 +220,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-3.jpg    1x,
-                      ./images/portfolio/portfolio-3@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-3.jpg"
-                    alt="робота 3"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-3.jpg    1x,
+                        ./images/portfolio/desktop-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-3.jpg    1x,
+                        ./images/portfolio/tablet-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-3.jpg    1x,
+                        ./images/portfolio/mobile-3@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-3.jpg"
+                      alt="Робота 3"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -207,16 +264,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-4.jpg    1x,
-                      ./images/portfolio/portfolio-4@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-4.jpg"
-                    alt="робота 4"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-4.jpg    1x,
+                        ./images/portfolio/desktop-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-4.jpg    1x,
+                        ./images/portfolio/tablet-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-4.jpg    1x,
+                        ./images/portfolio/mobile-4@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-4.jpg"
+                      alt="Робота 4"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -232,16 +308,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-5.jpg    1x,
-                      ./images/portfolio/portfolio-5@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-5.jpg"
-                    alt="робота 5"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-5.jpg    1x,
+                        ./images/portfolio/desktop-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-5.jpg    1x,
+                        ./images/portfolio/tablet-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-5.jpg    1x,
+                        ./images/portfolio/mobile-5@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-5.jpg"
+                      alt="Робота 5"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -257,16 +352,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-6.jpg    1x,
-                      ./images/portfolio/portfolio-6@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-6.jpg"
-                    alt="робота 6"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-6.jpg    1x,
+                        ./images/portfolio/desktop-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-6.jpg    1x,
+                        ./images/portfolio/tablet-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-6.jpg    1x,
+                        ./images/portfolio/mobile-6@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-6.jpg"
+                      alt="Робота 6"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -282,16 +396,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-7.jpg    1x,
-                      ./images/portfolio/portfolio-7@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-7.jpg"
-                    alt="робота 7"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-7.jpg    1x,
+                        ./images/portfolio/desktop-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-7.jpg    1x,
+                        ./images/portfolio/tablet-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-7.jpg    1x,
+                        ./images/portfolio/mobile-7@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-7.jpg"
+                      alt="Робота 7"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -307,16 +440,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-8.jpg    1x,
-                      ./images/portfolio/portfolio-8@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-8.jpg"
-                    alt="робота 8"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-8.jpg    1x,
+                        ./images/portfolio/desktop-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-8.jpg    1x,
+                        ./images/portfolio/tablet-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-8.jpg    1x,
+                        ./images/portfolio/mobile-8@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-8.jpg"
+                      alt="Робота 8"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -332,16 +484,35 @@
             <li class="works__item">
               <a href="#" class="works__link">
                 <div class="works__overlay">
-                  <img
-                    class="works__img"
-                    srcset="
-                      ./images/portfolio/portfolio-9.jpg    1x,
-                      ./images/portfolio/portfolio-9@2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio-9.jpg"
-                    alt="робота 9"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-9.jpg    1x,
+                        ./images/portfolio/desktop-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-9.jpg    1x,
+                        ./images/portfolio/tablet-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-9.jpg    1x,
+                        ./images/portfolio/mobile-9@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="works__foto"
+                      src="./images/portfolio/mobile-9.jpg"
+                      alt="Робота 9"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
