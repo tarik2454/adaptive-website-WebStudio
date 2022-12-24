@@ -1,6 +1,6 @@
 # adaptive-website-WebStudio
 
-Project Link: [https://github.com/tarik2454/adaptive-website-WebStudio](https://github.com/tarik2454/adaptive-website-WebStudio)
+Project Link: [https://tarik2454.github.io/adaptive-website-WebStudio/](https://tarik2454.github.io/adaptive-website-WebStudio/)
 
 ## Technologies used:
 
