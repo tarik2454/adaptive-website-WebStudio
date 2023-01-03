@@ -1,2 +1,13 @@
-# goit-markup-hw-08
-https://tarik2454.github.io/goit-markup-hw-08/ домашнее задание #8
+# adaptive-website-WebStudio
+
+Project Link: [https://tarik2454.github.io/adaptive-website-WebStudio/](https://tarik2454.github.io/adaptive-website-WebStudio/)
+
+## Technologies used:
+
+* HTML
+* SCSS
+* JavaScript
+
+## Contact:
+
+* email - tarik2454@gmail.com
