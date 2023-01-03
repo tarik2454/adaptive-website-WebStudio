@@ -5,6 +5,10 @@
 
 html {
   overflow-x: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 body {
@@ -17,10 +21,6 @@ body {
   color: $primary-text-color;
   background-color: $primary-bg-color;
   overflow-x: hidden;
-
-  &.no-scroll {
-    overflow: hidden;
-  }
 }
 
 /* Components */

@@ -52,6 +52,9 @@ img {
 html {
   overflow-x: hidden;
 }
+html.no-scroll {
+  overflow: hidden;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -63,9 +66,6 @@ body {
   color: #757575;
   background-color: #ffffff;
   overflow-x: hidden;
-}
-body.no-scroll {
-  overflow: hidden;
 }
 
 /* Components */

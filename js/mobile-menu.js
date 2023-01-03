@@ -1,13 +1,15 @@
 (() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
+  const menuBtn = document.querySelector('[data-menu-button]');
+  const mobileMenuEl = document.querySelector('[data-menu]');
+  const html = document.querySelector('html');
 
-  menuBtnRef.addEventListener('click', () => {
-    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+  menuBtn.addEventListener('click', () => {
+    const expanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
 
-    menuBtnRef.classList.toggle('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
+    html.classList.toggle('no-scroll');
+    menuBtn.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', !expanded);
 
-    mobileMenuRef.classList.toggle('is-open');
+    mobileMenuEl.classList.toggle('is-open');
   });
 })();
