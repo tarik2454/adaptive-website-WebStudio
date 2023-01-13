@@ -110,26 +110,34 @@
         <div class="container">
           <h1 class="section__title visually-hidden">Портфоліо</h1>
 
-          <ul class="filter">
+          <ul class="filter js-filter">
             <li class="filter__item">
-              <button class="button button--filter" type="button">Усі</button>
+              <button class="button button--filter" type="button" data-filter="all">Усі</button>
             </li>
             <li class="filter__item">
-              <button class="button button--filter" type="button">Веб-сайти</button>
+              <button class="button button--filter" type="button" data-filter="website">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__item">
-              <button class="button button--filter" type="button">Додатки</button>
+              <button class="button button--filter" type="button" data-filter="application">
+                Додатки
+              </button>
             </li>
             <li class="filter__item">
-              <button class="button button--filter" type="button">Дизайн</button>
+              <button class="button button--filter" type="button" data-filter="design">
+                Дизайн
+              </button>
             </li>
             <li class="filter__item">
-              <button class="button button--filter" type="button">Маркетинг</button>
+              <button class="button button--filter" type="button" data-filter="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <ul class="works__list">
-            <li class="works__item">
+            <li class="works__item" data-cat="website">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -173,7 +181,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="design">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -217,7 +226,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="application">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -261,7 +271,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="marketing">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -305,7 +316,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="application">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -349,7 +361,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="website">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -393,7 +406,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="design">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -437,7 +451,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="marketing">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -481,7 +496,8 @@
                 </div>
               </a>
             </li>
-            <li class="works__item">
+
+            <li class="works__item" data-cat="application">
               <a href="#" class="works__link">
                 <div class="works__overlay">
                   <picture>
@@ -616,7 +632,7 @@
     </footer>
     <!-- /.Footer -->
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/filter.js" type="module"></script>
   </body>
 </html>
