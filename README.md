@@ -1,4 +1,4 @@
-# adaptive-website-WebStudio
+# Adaptive website WebStudio
 
 Project Link: [https://tarik2454.github.io/adaptive-website-WebStudio/](https://tarik2454.github.io/adaptive-website-WebStudio/)
 
@@ -10,4 +10,5 @@ Project Link: [https://tarik2454.github.io/adaptive-website-WebStudio/](https://
 
 ## Contact:
 
-* email - tarik2454@gmail.com
+Telegram: <https://t.me/tarik_2454>  
+Email: <tarik2454@gmail.com>
